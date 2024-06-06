@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="index_page">
+      <!-- home start -->
+      <section class="home">
+        <div class="main_container">
+          <div class="home_in d-grid">
+            <div class="home_body">
+              <h2 class="title">
+                <span>Automated system</span> <br />
+                to keep your airBNB <br />
+                always fully <br />
+                stocked
+              </h2>
+              <div class="home_auth d-flex align-items-center">
+                <a href="https://rentaltab.com/register.php" class="sign_up"
+                  >Sign up</a
+                >
+                <a href="https://rentaltab.com/login.php" class="login"
+                  >Log in</a
+                >
+              </div>
+            </div>
+            <div class="home_video position-relative">
+              <div
+                class="how_works position-absolute d-sm-flex d-none flex-column align-items-center"
+              >
+                <div class="modal_btn" data-filter="video-modal">
+                  <svg
+                    width="70"
+                    height="70"
+                    viewBox="0 0 70 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="70" height="70" rx="35" fill="#E61E4D" />
+                    <path
+                      d="M41.1789 33.869L33.1853 28.7302C32.5198 28.3024 31.6445 28.7802 31.6445 29.5714V39.849C31.6445 40.6401 32.5198 41.118 33.1853 40.6901L41.1789 35.5514C41.7913 35.1577 41.7913 34.2626 41.1789 33.869Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span> Watch the video how it works</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- video modal start -->
+        <div
+          id="video-modal"
+          class="video_modal modal_wrapper position-fixed d-flex align-items-center justify-content-center"
+        >
+          <!-- <div class="blur position-absolute"></div> -->
+          <div
+            class="modal_in position-relative d-flex flex-sm-row flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="close_btn position-absolute d-sm-block d-none"
+              data-filter="video-modal"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="19.5" stroke="white" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.7781 21.0812L25.1838 26.4869L26.265 25.4057L20.8593 20L26.265 14.5943L25.1838 13.5131L19.7781 18.9188L14.372 13.5128L13.2908 14.5939L18.6969 20L13.2908 25.4061L14.372 26.4872L19.7781 21.0812Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="video_wrapper position-relative w-100 h-100 d-flex align-items-center justify-content-center"
+            >
+              <button class="play_btn position-absolute">
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 70 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="70" height="70" rx="35" fill="#E61E4D" />
+                  <path
+                    d="M41.1789 33.869L33.1853 28.7302C32.5198 28.3024 31.6445 28.7802 31.6445 29.5714V39.849C31.6445 40.6401 32.5198 41.118 33.1853 40.6901L41.1789 35.5514C41.7913 35.1577 41.7913 34.2626 41.1789 33.869Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <!-- <video
+                src="./ASABNI-TINCHLANTRUVCHI-MUSIQA-AJOYIB-TABIAT-MANZARALARI.mp4"
+                controls
+              ></video> -->
+            </div>
+            <div class="mobil_text d-sm-none d-block">
+              Watch the video how it works
+            </div>
+          </div>
+        </div>
+        <!-- video modal end -->
+        <div class="home_bottom">
+          <div
+            class="main_container d-flex flex-md-row flex-column align-items-center justify-content-between"
+          >
+            <p class="description">
+              RENTAL TAB orders goods delivered to your address when your stocks
+              run low no added fees, just the best prices direct to you
+            </p>
+            <button class="to_try_btn mr-3">Try it now</button>
+          </div>
+        </div>
+      </section>
+      <!-- home end -->
+
+      <!-- benefits start -->
+      <section class="benefits">
+        <div class="main_container">
+          <h1 class="title">benefits</h1>
+          <div class="benefits_card">
+            <div
+              class="card_item d-flex align-items-center justify-content-between"
+            >
+              <div class="card_body">
+                <div class="icon">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.0003 2.16675C16.3743 2.16675 12.8298 3.24198 9.81488 5.25647C6.79998 7.27096 4.45015 10.1342 3.06254 13.4842C1.67494 16.8342 1.31187 20.5204 2.01927 24.0767C2.72667 27.6331 4.47275 30.8997 7.03671 33.4637C9.60067 36.0277 12.8674 37.7738 16.4237 38.4811C19.98 39.1885 23.6662 38.8255 27.0162 37.4379C30.3662 36.0503 33.2295 33.7004 35.2439 30.6855C37.2584 27.6706 38.3337 24.1261 38.3337 20.5001C38.3279 15.6395 36.3946 10.9797 32.9576 7.54279C29.5207 4.10587 24.8609 2.17248 20.0003 2.16675ZM20.0003 35.5001C17.0336 35.5001 14.1335 34.6203 11.6668 32.9721C9.20004 31.3239 7.27745 28.9812 6.14214 26.2403C5.00683 23.4994 4.70978 20.4834 5.28855 17.5737C5.86733 14.664 7.29594 11.9913 9.39373 9.89348C11.4915 7.79569 14.1643 6.36708 17.074 5.7883C19.9837 5.20952 22.9997 5.50657 25.7406 6.64189C28.4815 7.7772 30.8242 9.69979 32.4724 12.1665C34.1206 14.6333 35.0003 17.5334 35.0003 20.5001C34.9955 24.4768 33.4136 28.2893 30.6016 31.1013C27.7896 33.9133 23.9771 35.4952 20.0003 35.5001Z"
+                      fill="#E61E4D"
+                    />
+                    <path
+                      d="M21.6663 19.8099V10.4999C21.6663 10.0579 21.4907 9.63397 21.1782 9.32141C20.8656 9.00885 20.4417 8.83325 19.9997 8.83325C19.5576 8.83325 19.1337 9.00885 18.8212 9.32141C18.5086 9.63397 18.333 10.0579 18.333 10.4999V20.4999C18.3331 20.9419 18.5088 21.3658 18.8213 21.6783L23.8213 26.6783C24.1357 26.9818 24.5567 27.1498 24.9937 27.146C25.4307 27.1422 25.8487 26.967 26.1577 26.6579C26.4667 26.3489 26.642 25.9309 26.6458 25.4939C26.6496 25.0569 26.4816 24.6359 26.178 24.3216L21.6663 19.8099Z"
+                      fill="#E61E4D"
+                    />
+                  </svg>
+                </div>
+                <div class="card_body_title">Save time</div>
+                <p class="card_body_description">
+                  You no longer have to waste time shopping at Costco. Now
+                  balances on Airbnb will always be replenished on time
+                </p>
+              </div>
+              <div
+                class="card_img d-flex align-items-center justify-content-center justify-content-center"
+              >
+                <img src="./img/benefits/1.png" alt="1" />
+              </div>
+            </div>
+            <div
+              class="card_item d-flex align-items-center justify-content-between"
+            >
+              <div class="card_body">
+                <div class="icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_287_1622)">
+                      <path
+                        d="M37.3405 20.518C37.1796 20.1887 37.1796 19.811 37.3405 19.4818L38.8324 16.4299C39.663 14.7306 39.0049 12.7052 37.3341 11.8187L34.3334 10.2266C34.0096 10.0548 33.7877 9.74922 33.7243 9.38836L33.1374 6.04237C32.8106 4.17941 31.0874 2.92754 29.215 3.19246L25.8515 3.66824C25.4884 3.71949 25.1294 3.60277 24.8661 3.34801L22.4246 0.986147C21.0652 -0.329002 18.9355 -0.32908 17.5761 0.986147L15.1346 3.34824C14.8711 3.60308 14.5121 3.71957 14.1492 3.66847L10.7857 3.1927C8.91265 2.92762 7.19 4.17964 6.86321 6.0426L6.27634 9.38844C6.21298 9.74938 5.99102 10.0549 5.66736 10.2267L2.66659 11.8189C0.99582 12.7053 0.337699 14.7308 1.16832 16.4301L2.66011 19.482C2.82104 19.8113 2.82104 20.1889 2.66011 20.5181L1.16824 23.57C0.33762 25.2693 0.995742 27.2947 2.66651 28.1811L5.66728 29.7733C5.99103 29.945 6.21298 30.2507 6.27634 30.6115L6.86321 33.9575C7.16071 35.6534 8.61492 36.8428 10.2862 36.8427C10.4508 36.8427 10.6179 36.8311 10.7858 36.8073L14.1493 36.3316C14.512 36.2801 14.8712 36.397 15.1346 36.6518L17.5761 39.0137C18.256 39.6713 19.128 40.0001 20.0003 40C20.8724 39.9999 21.745 39.6712 22.4245 39.0137L24.8661 36.6518C25.1295 36.397 25.4886 36.2806 25.8515 36.3316L29.215 36.8073C31.0882 37.0723 32.8106 35.8204 33.1374 33.9574L33.7244 30.6116C33.7877 30.2507 34.0097 29.9451 34.3334 29.7733L37.3341 28.1811C39.0049 27.2947 39.663 25.2692 38.8324 23.5699L37.3405 20.518ZM36.2528 26.1431L33.252 27.7353C32.2953 28.243 31.6392 29.146 31.452 30.2129L30.8652 33.5588C30.7546 34.1891 30.1719 34.6124 29.5381 34.523L26.1746 34.0472C25.1019 33.8953 24.0405 34.2405 23.262 34.9935L20.8205 37.3553C20.3606 37.8002 19.6401 37.8002 19.1801 37.3553L16.7386 34.9935C16.0807 34.357 15.2205 34.012 14.3225 34.012C14.158 34.012 13.9921 34.0236 13.8261 34.0471L10.4626 34.5229C9.82928 34.6124 9.24608 34.189 9.13546 33.5587L8.54851 30.2127C8.36132 29.1458 7.70523 28.2428 6.74844 27.7352L3.74768 26.143C3.18237 25.8431 2.95971 25.1579 3.24073 24.583L4.73259 21.531C5.20822 20.5579 5.20822 19.4418 4.73259 18.4687L3.24073 15.4168C2.95971 14.8418 3.18237 14.1566 3.74768 13.8567L6.74844 12.2645C7.70516 11.7568 8.36132 10.8538 8.54843 9.78695L9.1353 6.44104C9.24593 5.81073 9.82858 5.38729 10.4624 5.47682L13.8259 5.9526C14.8982 6.1044 15.96 5.75932 16.7385 5.00628L19.18 2.64442C19.6399 2.19958 20.3604 2.19958 20.8204 2.64442L23.2619 5.00628C24.0404 5.7594 25.102 6.1044 26.1744 5.9526L29.5379 5.47682C30.1713 5.38722 30.7545 5.81073 30.865 6.44104L31.4519 9.78703C31.6391 10.8539 32.2952 11.7569 33.252 12.2645L36.2527 13.8567C36.818 14.1566 37.0407 14.8418 36.7597 15.4168L35.2678 18.4686C34.7922 19.4417 34.7922 20.5579 35.2678 21.5309L36.7597 24.5828C37.0408 25.1579 36.8181 25.8432 36.2528 26.1431Z"
+                        fill="#E61E4D"
+                      />
+                      <path
+                        d="M28.4282 11.5715C27.9778 11.121 27.2473 11.121 26.7969 11.5715L11.5712 26.7972C11.1208 27.2477 11.1208 27.978 11.5712 28.4285C11.7965 28.6537 12.0917 28.7664 12.3869 28.7664C12.682 28.7664 12.9773 28.6538 13.2025 28.4285L28.4281 13.2029C28.8787 12.7523 28.8787 12.022 28.4282 11.5715Z"
+                        fill="#E61E4D"
+                      />
+                      <path
+                        d="M15.3858 9.61841C13.0537 9.61841 11.1562 11.5158 11.1562 13.848C11.1562 16.1802 13.0537 18.0776 15.3858 18.0776C17.718 18.0776 19.6154 16.1802 19.6154 13.848C19.6154 11.5158 17.718 9.61841 15.3858 9.61841ZM15.3858 15.7705C14.3258 15.7705 13.4633 14.9081 13.4633 13.8479C13.4633 12.7878 14.3258 11.9254 15.3858 11.9254C16.4459 11.9254 17.3084 12.7878 17.3084 13.8479C17.3083 14.9081 16.4459 15.7705 15.3858 15.7705Z"
+                        fill="#E61E4D"
+                      />
+                      <path
+                        d="M24.6144 21.9226C22.2822 21.9226 20.3848 23.82 20.3848 26.1522C20.3848 28.4844 22.2822 30.3818 24.6144 30.3818C26.9465 30.3818 28.8439 28.4844 28.8439 26.1522C28.8439 23.82 26.9465 21.9226 24.6144 21.9226ZM24.6144 28.0747C23.5543 28.0747 22.6918 27.2123 22.6918 26.1522C22.6918 25.0921 23.5542 24.2297 24.6144 24.2297C25.6744 24.2297 26.5368 25.0921 26.5368 26.1522C26.5368 27.2123 25.6744 28.0747 24.6144 28.0747Z"
+                        fill="#E61E4D"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_287_1622">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="card_body_title">Always the best price</div>
+                <p class="card_body_description">
+                  We select products at the best prices, find discounts and
+                  wholesale offers
+                </p>
+              </div>
+              <div
+                class="card_img d-flex align-items-center justify-content-center justify-content-center"
+              >
+                <img src="./img/benefits/2.png" alt="2" />
+              </div>
+            </div>
+            <div
+              class="card_item d-flex align-items-center justify-content-between"
+            >
+              <div class="card_body">
+                <div class="icon">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_287_1645)">
+                      <path
+                        d="M39.8762 31.3822L38.3963 28.4221C37.6637 26.957 36.1911 26.0469 34.553 26.0469H32.9688V10.6562C32.9688 10.0091 32.4441 9.48438 31.7969 9.48438C31.1497 9.48438 30.625 10.0091 30.625 10.6562V26.0469H29.0408C27.4141 26.0469 25.9511 26.9446 25.2134 28.3916C24.2773 28.0318 23.277 27.8438 22.2656 27.8438H19.5312V26.6255C20.0519 26.304 20.5339 25.9259 20.9691 25.5H23.0469C25.847 25.5 28.125 23.222 28.125 20.4219V14.9531C28.125 12.7035 27.5363 10.4886 26.4225 8.54773C25.4927 6.92766 24.2134 5.52289 22.693 4.44164L23.3923 1.99375C23.6062 1.24523 23.0442 0.5 22.2656 0.5H8.20312C7.42453 0.5 6.8625 1.24523 7.07633 1.99383L7.7757 4.44172C6.25523 5.52289 4.97594 6.92766 4.04617 8.54781C2.9325 10.4886 2.34375 12.7035 2.34375 14.9531V20.4219C2.34375 23.222 4.6218 25.5 7.42188 25.5H9.49969C9.93477 25.9259 10.4169 26.304 10.9375 26.6255V27.8438H8.20312C3.67992 27.8438 0 31.5237 0 36.0469V39.3281C0 39.9753 0.524687 40.5 1.17188 40.5H38.8281C39.4753 40.5 40 39.9753 40 39.3281V31.9062C40 31.7243 39.9577 31.5449 39.8762 31.3822ZM20.712 2.84375L19.8191 5.96875H10.6495L9.75664 2.84375H20.712ZM7.82383 23.1562H7.42188C5.91414 23.1562 4.6875 21.9296 4.6875 20.4219V14.9531C4.6875 11.7782 6.07695 8.85266 8.4675 6.86273L8.63883 7.46258C8.78258 7.96563 9.24242 8.3125 9.76562 8.3125H20.7031C21.2263 8.3125 21.6862 7.96563 21.8299 7.46258L22.0012 6.86273C24.3918 8.85266 25.7812 11.7782 25.7812 14.9531V20.4219C25.7812 21.9296 24.5546 23.1562 23.0469 23.1562H22.6449C23.1527 22.0901 23.4375 20.898 23.4375 19.6406V15.7344C23.4375 13.7959 21.8604 12.2188 19.9219 12.2188H15.7624C14.6269 12.2188 13.5273 11.8858 12.5825 11.2559C11.994 10.8637 11.3091 10.6562 10.6019 10.6562C8.63305 10.6562 7.03125 12.258 7.03125 14.2269V19.6406C7.03125 20.898 7.31602 22.0901 7.82383 23.1562ZM9.375 19.6406V14.2269C9.375 13.5504 9.92539 13 10.6019 13C10.8448 13 11.0802 13.0712 11.2824 13.206C12.6134 14.0934 14.1626 14.5625 15.7624 14.5625H19.9219C20.568 14.5625 21.0938 15.0882 21.0938 15.7344V19.6406C21.0938 22.8715 18.4652 25.5 15.2344 25.5C12.0035 25.5 9.375 22.8715 9.375 19.6406ZM17.1875 27.6082V29.0156C17.1875 30.0926 16.3113 30.9688 15.2344 30.9688C14.1574 30.9688 13.2812 30.0926 13.2812 29.0156V27.6082C13.9075 27.7617 14.5615 27.8438 15.2344 27.8438C15.9073 27.8438 16.5613 27.7617 17.1875 27.6082ZM23.7175 31.3822C23.6361 31.5449 23.5938 31.7243 23.5938 31.9062V38.1562H2.34375V36.0469C2.34375 32.816 4.97227 30.1875 8.20312 30.1875H11.1012C11.6127 31.9888 13.2713 33.3125 15.2344 33.3125C17.1974 33.3125 18.8559 31.9888 19.3675 30.1875H22.2656C22.9121 30.1875 23.552 30.2947 24.1581 30.5009L23.7175 31.3822ZM27.2937 29.4702C27.6268 28.8043 28.2961 28.3906 29.0407 28.3906H34.553C35.2976 28.3906 35.967 28.8043 36.2999 29.4702L36.932 30.7344H26.6617L27.2937 29.4702ZM28.2812 38.1562H25.9375V33.0781H28.2812V38.1562ZM32.9688 38.1562H30.625V33.0781H32.9688V38.1562ZM37.6562 38.1562H35.3125V33.0781H37.6562V38.1562Z"
+                        fill="#E61E4D"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_287_1645">
+                        <rect
+                          width="40"
+                          height="40"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="card_body_title">Ease of use</div>
+                <p class="card_body_description">
+                  Accessible to every cleaner - no complications!
+                </p>
+              </div>
+              <div
+                class="card_img d-flex align-items-end justify-content-center"
+              >
+                <img src="./img/benefits/3.png" alt="3" />
+              </div>
+            </div>
+            <div
+              class="card_item d-flex align-items-center justify-content-between"
+            >
+              <div class="card_body">
+                <div class="icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_288_1657)">
+                      <path
+                        d="M0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20ZM8.3718 33.2855L15.0281 26.6291L22.4859 34.0869C22.9435 34.5445 23.6855 34.5445 24.1431 34.0869L34.0868 24.1432C34.5445 23.6855 34.5445 22.9436 34.0868 22.4859L26.6291 15.0282L33.2854 8.37188C36.0065 11.478 37.6562 15.5461 37.6562 20C37.6562 29.7512 29.7512 37.6562 20 37.6562C15.5461 37.6562 11.478 36.0065 8.3718 33.2855ZM19.9166 11.6302L23.3146 15.0282L15.0281 23.3145L11.6302 19.9166C12.9208 17.9652 12.9208 15.4056 11.6302 13.4542L13.4542 11.6302C15.4056 12.9209 17.9652 12.9209 19.9166 11.6302ZM15.1707 9.91375L16.6855 8.39898L18.2002 9.91367C17.245 10.3688 16.1259 10.3688 15.1707 9.91375ZM24.9719 16.6855L28.3698 20.0834C27.0792 22.0348 27.0792 24.5944 28.3698 26.5458L26.5458 28.3698C24.5944 27.0792 22.0348 27.0792 20.0834 28.3698L16.6855 24.9719L24.9719 16.6855ZM24.8293 30.0863L23.3145 31.601L21.7998 30.0863C22.7551 29.6313 23.8741 29.6313 24.8293 30.0863ZM30.0863 21.7998L31.6009 23.3145L30.0862 24.8293C29.6312 23.8741 29.6312 22.755 30.0863 21.7998ZM2.34375 20C2.34375 10.2487 10.2487 2.34375 20 2.34375C24.4539 2.34375 28.522 3.99352 31.6282 6.71453L24.9719 13.3709L17.5141 5.91313C17.0564 5.45547 16.3145 5.45547 15.8568 5.91313L5.91313 15.8568C5.45547 16.3145 5.45547 17.0564 5.91313 17.5141L13.3709 24.9718L6.71453 31.6281C3.99352 28.522 2.34375 24.4539 2.34375 20ZM9.91375 18.2002L8.39906 16.6855L9.91383 15.1707C10.3688 16.1259 10.3688 17.245 9.91375 18.2002Z"
+                        fill="#E61E4D"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_288_1657">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="card_body_title">Free for you</div>
+                <p class="card_body_description">
+                  We do not charge any additional fees or commissions. For you,
+                  it will always be free
+                </p>
+                <a
+                  href="https://rentaltab.com/register.php"
+                  class="sign_up d-sm-inline-block d-none"
+                  >Sign up</a
+                >
+              </div>
+              <div
+                class="card_img d-flex align-items-end justify-content-center"
+              >
+                <img src="./img/benefits/4.png" alt="4" />
+              </div>
+              <a
+                href="https://rentaltab.com/register.php"
+                class="sign_up d-sm-none d-block"
+                >Sign up</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- benefits end -->
+
+      <!-- sawing money start -->
+      <section class="sawing_money">
+        <div class="main_container">
+          <h1 class="title">
+            rental TAB CARES ABOUT <span>SAVING YOU MONEY</span>
+          </h1>
+          <div class="sawing_money_card d-grid">
+            <div class="card_item">
+              <div class="card_img d-grid">
+                <div
+                  class="img d-flex align-items-center justify-content-center"
+                >
+                  <img src="./img/costco.svg" alt="costco" />
+                </div>
+                <div
+                  class="img d-flex align-items-center justify-content-center"
+                >
+                  <img src="./img/amazon.svg" alt="amazon" />
+                </div>
+                <div
+                  class="img d-flex align-items-center justify-content-center"
+                >
+                  <img src="./img/bestbuy.svg" alt="bestbuy" />
+                </div>
+                <div
+                  class="img d-flex align-items-center justify-content-center"
+                >
+                  <img src="./img/samsclub.svg" alt="samsclub" />
+                </div>
+              </div>
+              <div class="card_body">
+                <div class="card_body_title">
+                  Competition is the basis of the best price
+                </div>
+                <div class="card_body_description">
+                  We stimulate competition among suppliers to achieve the best
+                  terms and prices.
+                </div>
+              </div>
+            </div>
+            <div class="card_item d-flex flex-column justify-content-between">
+              <div class="card_img">
+                <div
+                  class="img d-flex align-items-center justify-content-center bg-transparent p-0"
+                >
+                  <img src="./img/spending.png" alt="spending" />
+                </div>
+              </div>
+              <div class="card_body">
+                <div class="card_body_title">
+                  Expense reports <br />
+                  under control
+                </div>
+                <div class="card_body_description">
+                  We automatically monitor and alert for any deviations in
+                  expenses, ensuring reliable financial control
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sawing money end -->
+
+      <!-- about getting started -->
+      <section class="about_getting_started">
+        <div class="main_container">
+          <h1 class="title">How to start?</h1>
+          <div class="about_getting_started_card_wrapper">
+            <div class="about_getting_started_card d-grid">
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/register.svg" alt="" />
+                </div>
+                <div class="card_body">
+                  <ol class="step">
+                    <li>Register</li>
+                  </ol>
+                  <p class="card_description">
+                    Quickly sign up to access our services and start benefiting
+                  </p>
+                  <div class="card_link">
+                    <a
+                      href="https://rentaltab.com/register.php"
+                      class="d-flex align-items-center"
+                    >
+                      <span>Sign up now</span>
+
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M17.5032 8.83317C17.9635 8.83317 18.3366 8.46007 18.3366 7.99984V2.99984C18.3366 2.5396 17.9635 2.1665 17.5032 2.1665H12.5002C12.04 2.1665 11.6669 2.5396 11.6669 2.99984C11.6669 3.46007 12.04 3.83317 12.5002 3.83317H15.4916L8.31935 11.0053C7.99392 11.3308 7.99392 11.8584 8.31935 12.1838C8.64483 12.5093 9.17241 12.5093 9.49783 12.1838L16.6699 5.01181V7.99984C16.6699 8.46007 17.043 8.83317 17.5032 8.83317ZM4.16699 4.6665C2.78628 4.6665 1.66699 5.7858 1.66699 7.1665V16.3332C1.66699 17.7139 2.78628 18.8332 4.16699 18.8332H13.3337C14.7144 18.8332 15.8337 17.7139 15.8337 16.3332V11.3332C15.8337 10.8729 15.4606 10.4998 15.0003 10.4998C14.5401 10.4998 14.167 10.8729 14.167 11.3332V16.3332C14.167 16.7934 13.7939 17.1665 13.3337 17.1665H4.16699C3.70676 17.1665 3.33366 16.7934 3.33366 16.3332V7.1665C3.33366 6.70627 3.70676 6.33317 4.16699 6.33317H9.16699C9.62724 6.33317 10.0003 5.96007 10.0003 5.49984C10.0003 5.0396 9.62724 4.6665 9.16699 4.6665H4.16699Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/product_.svg" alt="" />
+                </div>
+                <div class="card_body">
+                  <ol class="step" start="2">
+                    <li>Configure your product list</li>
+                  </ol>
+                  <p class="card_description">
+                    Easily set up your product selection for Airbnb
+                  </p>
+                  <div class="card_link">
+                    <a
+                      href="https://calendly.com/serter2069/rental-tab-support"
+                      target="_blank"
+                      class="d-flex align-items-center"
+                    >
+                      <span>Get help</span>
+
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M17.5032 8.83317C17.9635 8.83317 18.3366 8.46007 18.3366 7.99984V2.99984C18.3366 2.5396 17.9635 2.1665 17.5032 2.1665H12.5002C12.04 2.1665 11.6669 2.5396 11.6669 2.99984C11.6669 3.46007 12.04 3.83317 12.5002 3.83317H15.4916L8.31935 11.0053C7.99392 11.3308 7.99392 11.8584 8.31935 12.1838C8.64483 12.5093 9.17241 12.5093 9.49783 12.1838L16.6699 5.01181V7.99984C16.6699 8.46007 17.043 8.83317 17.5032 8.83317ZM4.16699 4.6665C2.78628 4.6665 1.66699 5.7858 1.66699 7.1665V16.3332C1.66699 17.7139 2.78628 18.8332 4.16699 18.8332H13.3337C14.7144 18.8332 15.8337 17.7139 15.8337 16.3332V11.3332C15.8337 10.8729 15.4606 10.4998 15.0003 10.4998C14.5401 10.4998 14.167 10.8729 14.167 11.3332V16.3332C14.167 16.7934 13.7939 17.1665 13.3337 17.1665H4.16699C3.70676 17.1665 3.33366 16.7934 3.33366 16.3332V7.1665C3.33366 6.70627 3.70676 6.33317 4.16699 6.33317H9.16699C9.62724 6.33317 10.0003 5.96007 10.0003 5.49984C10.0003 5.0396 9.62724 4.6665 9.16699 4.6665H4.16699Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/qr_code.svg" alt="" />
+                </div>
+                <div class="card_body">
+                  <ol class="step" start="3">
+                    <li>QR for inventory setup</li>
+                  </ol>
+                  <p class="card_description">
+                    Affix your QR code for easy access of cleaners for inventory
+                  </p>
+                  <div class="card_link">
+                    <a
+                      class="d-flex align-items-center modal_btn"
+                      data-filter="qr-code"
+                    >
+                      <span>Example</span>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M17.5032 8.83317C17.9635 8.83317 18.3366 8.46007 18.3366 7.99984V2.99984C18.3366 2.5396 17.9635 2.1665 17.5032 2.1665H12.5002C12.04 2.1665 11.6669 2.5396 11.6669 2.99984C11.6669 3.46007 12.04 3.83317 12.5002 3.83317H15.4916L8.31935 11.0053C7.99392 11.3308 7.99392 11.8584 8.31935 12.1838C8.64483 12.5093 9.17241 12.5093 9.49783 12.1838L16.6699 5.01181V7.99984C16.6699 8.46007 17.043 8.83317 17.5032 8.83317ZM4.16699 4.6665C2.78628 4.6665 1.66699 5.7858 1.66699 7.1665V16.3332C1.66699 17.7139 2.78628 18.8332 4.16699 18.8332H13.3337C14.7144 18.8332 15.8337 17.7139 15.8337 16.3332V11.3332C15.8337 10.8729 15.4606 10.4998 15.0003 10.4998C14.5401 10.4998 14.167 10.8729 14.167 11.3332V16.3332C14.167 16.7934 13.7939 17.1665 13.3337 17.1665H4.16699C3.70676 17.1665 3.33366 16.7934 3.33366 16.3332V7.1665C3.33366 6.70627 3.70676 6.33317 4.16699 6.33317H9.16699C9.62724 6.33317 10.0003 5.96007 10.0003 5.49984C10.0003 5.0396 9.62724 4.6665 9.16699 4.6665H4.16699Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about getting started -->
+
+      <!-- faq start -->
+      <section class="faq">
+        <div class="main_container">
+          <h1 class="title">Faq</h1>
+          <ul class="faq_list d-grid">
+            <li>
+              <div class="head">What is Rental Tab?</div>
+              <p class="list_body">
+                Rental Tab is an automated system designed to keep your Airbnb
+                properties fully stocked with necessary supplies.
+              </p>
+            </li>
+            <li>
+              <div class="head">How can I track my orders and deliveries?</div>
+              <p class="list_body">
+                You can track all your orders and deliveries directly on our
+                website, which provides updates and notifications on the status
+                of your orders.
+              </p>
+            </li>
+            <li>
+              <div class="head">
+                How does the automated ordering system work?
+              </div>
+              <p class="list_body">
+                The system monitors inventory levels and automatically orders
+                supplies when they are low, ensuring your properties are always
+                ready for guests
+              </p>
+            </li>
+            <li>
+              <div class="head">What happens if a product is out of stock?</div>
+              <p class="list_body">
+                If a product is out of stock, our supply department will contact
+                you to coordinate a suitable replacement
+              </p>
+            </li>
+            <li>
+              <div class="head">Is there a cost to use Rental Tab?</div>
+              <p class="list_body">
+                No, Rental Tab is completely free. There are no charges for
+                using the system.
+              </p>
+            </li>
+            <li>
+              <div class="head">
+                How secure is my information with Rental Tab?
+              </div>
+              <p class="list_body">
+                We prioritize security and privacy, employing advanced
+                encryption and security protocols to protect your data
+              </p>
+            </li>
+            <li>
+              <div class="head">
+                What types of supplies can I order through Rental Tab?
+              </div>
+              <p class="list_body">
+                You can order a wide range of supplies, including toiletries,
+                cleaning products, and other essentials for Airbnb properties.
+              </p>
+            </li>
+            <li>
+              <div class="head">
+                Can I use Rental Tab for multiple properties?
+              </div>
+              <p class="list_body">
+                Yes, Rental Tab is designed to manage supplies for multiple
+                properties, making it easy to scale up as your business grows.
+              </p>
+            </li>
+            <li class="d-flex align-items-center">
+              <a href="https://rentaltab.com/register.php" class="sign_up"
+                >Sign up</a
+              >
+              <a href="https://rentaltab.com/login.php" class="login">Log in</a>
+            </li>
+            <li>
+              <div class="head">How do I contact support if I have issues?</div>
+              <p class="descrption">
+                You can contact our support team through our website. We are
+                here to help you with any issues or questions you might have
+              </p>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-center">
+            <button class="show_more_btn d-md-none d-block">Show more</button>
+          </div>
+        </div>
+      </section>
+      <!-- faq end -->
+
+      <!-- schedule call start -->
+      <section class="schedule_call">
+        <div class="main_container">
+          <div class="schedule_call_in text-center">
+            <div class="zoom">
+              <img src="./img/zoom.png" alt="" />
+            </div>
+            <h1 class="title">There are still questions?</h1>
+            <p class="description">
+              Book a call and we will help you set up customize the inventory
+              list in 15 minutes on Zoom
+            </p>
+            <a
+              href="https://calendly.com/serter2069/rental-tab-support"
+              target="_blank"
+              class="schedule_call_link"
+              >Schedule a call</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- schedule call end -->
+
+      <!-- contact start -->
+      <section class="contact">
+        <div class="main_container">
+          <div class="contact_in d-flex justify-content-end position-relative">
+            <div class="contact_bg position-absolute w-100">
+              <img src="./img/contact_bg.png" alt="" />
+            </div>
+            <div
+              class="contact_body w-50 position-relative d-sm-block d-flex flex-column align-items-center"
+            >
+              <h2 class="title">Contact us</h2>
+              <p class="description">
+                If you have any questions or need assistance with the setup,
+                please contact us, and we will be happy to help.
+              </p>
+              <a href="tel:+17024826083" target="_blank" class="contact_btn"
+                >Contacts</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact end -->
+
+      <!-- modals -->
+      <div
+        class="qr_code modal_wrapper position-fixed d-flex align-items-center justify-content-center"
+        id="qr-code"
+      >
+        <div class="modal_in position-relative">
+          <div class="close_btn position-absolute" data-filter="qr-code">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.7781 21.0812L25.1838 26.4869L26.265 25.4057L20.8593 20L26.265 14.5943L25.1838 13.5131L19.7781 18.9188L14.372 13.5128L13.2908 14.5939L18.6969 20L13.2908 25.4061L14.372 26.4872L19.7781 21.0812Z"
+                fill="#D2D2D2"
+              />
+            </svg>
+          </div>
+          <div class="qr_code_img">
+            <img src="./img/qr_code_modal.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        let more = true;
+        sawingmoneyhfun();
+        function sawingmoneyhfun() {
+          if ($("html").width() > 769) {
+            let sawingmoneyh = 0;
+            sawingmoneyh = $(".sawing_money_card .img")[4].clientHeight;
+            $(".sawing_money_card .card_img").each((i, element) => {
+              $(element).css("height", sawingmoneyh + "px");
+            });
+          }
+        }
+        faqlistheight();
+        function faqlistheight() {
+          if ($("html").width() < 769 && more) {
+            let liheight = 0;
+            $(".faq .faq_list li").each((i, element) => {
+              if (i < 3) {
+                liheight += $(element).height();
+              }
+            });
+            $(".faq .faq_list").height(liheight + 50 + "px");
+            $(".faq .show_more_btn").click(function () {
+              $(this).addClass("d-none");
+              $(".faq .faq_list").height(100 + "%");
+              more = false;
+            });
+          } else {
+            $(".faq .faq_list").height(100 + "%");
+          }
+        }
+
+        $(window).on("resize", function () {
+          faqlistheight();
+          sawingmoneyhfun();
+        });
+
+        $(".modal_btn").click(function () {
+          $(".modal_wrapper").each((i, modal) => {
+            if ($(this).attr("data-filter") == $(modal).attr("id")) {
+              $("html").css("overflow", "hidden");
+              $(modal).addClass("active");
+              $(".home_in").css("filter", "blur(20px)");
+              $(".home_bottom").css("filter", "blur(20px)");
+              $(".benefits").css("filter", "blur(20px)");
+              $(".sawing_money").css("filter", "blur(20px)");
+              $(".about_getting_started").css("filter", "blur(20px)");
+              $(".faq").css("filter", "blur(20px)");
+              $(".schedule_call").css("filter", "blur(20px)");
+              $(".contact").css("filter", "blur(20px)");
+            }
+          });
+        });
+        $(".modal_wrapper .close_btn").click(function () {
+          $(".modal_wrapper").each((i, modal) => {
+            if ($(this).attr("data-filter") == $(modal).attr("id")) {
+              $("html").css("overflow", "visible");
+              $(modal).removeClass("active");
+              $(".home_in").css("filter", "blur(0)");
+              $(".home_bottom").css("filter", "blur(0)");
+              $(".benefits").css("filter", "blur(0)");
+              $(".sawing_money").css("filter", "blur(0)");
+              $(".about_getting_started").css("filter", "blur(0)");
+              $(".faq").css("filter", "blur(0)");
+              $(".schedule_call").css("filter", "blur(0)");
+              $(".contact").css("filter", "blur(0)");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

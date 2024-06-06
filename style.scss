@@ -1,0 +1,1787 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --red: #e61e4d;
+    --black: #1f3153;
+    --blue: #ecf1f8;
+}
+
+:root {
+    --font-family: "Inter", sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.main_container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.index_page {
+
+    // home start
+    .home {
+        padding: 80px 0 0;
+
+        .home_in {
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 80px;
+
+            .home_body {
+                position: relative;
+                z-index: 2;
+                background: var(--red);
+                border-radius: 30px;
+                padding: 60px 70px;
+
+                .title {
+                    font-family: var(--font-family);
+                    font-weight: 300;
+                    font-size: 50px;
+                    text-transform: uppercase;
+                    color: var(--white);
+                    margin-bottom: 160px;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+
+                .home_auth {
+                    gap: 20px;
+
+                    a {
+                        display: inline-block;
+                        background: var(--white);
+                        border: 1.26px solid var(--white);
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: var(--black);
+                        text-decoration: none;
+                        border-radius: 10px;
+                        padding: 25px 68px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: #D21945;
+                            color: #fff;
+                        }
+                    }
+
+                    .login {
+                        background-color: transparent;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+
+            .home_video {
+                background: url('./img/home_img.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 0 30px 30px 0;
+                margin-left: -25px;
+
+                .how_works {
+                    background: var(--white);
+                    border-radius: 10px;
+                    padding: 40px;
+                    bottom: 68px;
+                    right: 80px;
+                    user-select: none;
+
+                    .modal_btn {
+                        cursor: pointer;
+                    }
+
+                    span {
+                        max-width: 128px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        text-align: center;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .home_bottom {
+            background: var(--blue);
+            padding: 80px 0;
+
+            .main_container {
+                gap: 150px;
+            }
+
+            .description {
+                max-width: 991px;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 140%;
+                color: var(--black);
+            }
+
+            .to_try_btn {
+                background: var(--red);
+                border: none;
+                padding: 25px 56px;
+                border-radius: 10px;
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                color: var(--white);
+                white-space: nowrap;
+                cursor: url('./img/cursor.svg'), auto;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #D21945;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    // home end
+
+    // benefits start
+    .benefits {
+        padding: 140px 0 0;
+
+        .title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: var(--black);
+            margin-bottom: 40px;
+        }
+
+        .benefits_card {
+            .card_item {
+                gap: 20px;
+                margin-bottom: 80px;
+
+                .card_img {
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                &:first-child {
+                    .card_img {
+                        img {
+                            max-width: 100%;
+                            max-height: 424px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .card_img {
+                        img {
+                            max-height: 590px;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .card_img {
+                        img {
+                            max-height: 579px;
+                        }
+                    }
+                }
+
+                &:nth-child(2n) {
+                    .card_body {
+                        order: 2;
+                    }
+
+                    .card_img {
+                        order: 1;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+
+                    .card_img {
+                        img {
+                            max-height: 532px;
+                        }
+                    }
+                }
+
+                .card_body {
+                    max-width: 418px;
+                    width: 100%;
+
+                    .card_body_title {
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 140%;
+                        color: var(--black);
+                        margin: 15px 0;
+                    }
+
+                    .card_body_description {
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 160%;
+                        color: var(--black);
+                    }
+
+                    .sign_up {
+                        display: inline-block;
+                        border: 1.26px solid var(--red);
+                        border-radius: 10px;
+                        padding: 25px 50px;
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: var(--red);
+                        text-decoration: none;
+                        margin-top: 95px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background: var(--red);
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .card_img {
+                    max-width: 900px;
+                    width: 100%;
+                    min-height: 590px;
+                    background: var(--blue);
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    // benefits end
+
+    // sawing money start
+    .sawing_money {
+        padding: 140px 0 0;
+
+        .title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--black);
+            margin-bottom: 80px;
+
+            span {
+                color: var(--red);
+            }
+        }
+
+        .sawing_money_card {
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .card_item {
+                background: var(--blue);
+                border-radius: 30px;
+                padding: 80px 60px;
+
+                &:last-child {
+                    .card_img {
+                        .img {
+                            height: 418px;
+                        }
+                    }
+                }
+
+                .card_img {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                    margin-bottom: 70px;
+
+                    .img {
+                        background: var(--white);
+                        border-radius: 10px;
+                        padding: 0 30px;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                }
+
+                .card_body {
+                    .card_body_title {
+                        max-width: 360px;
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 140%;
+                        color: var(--black);
+                        margin-bottom: 15px;
+                    }
+
+                    .card_body_description {
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 160%;
+                        color: var(--black);
+                    }
+                }
+            }
+        }
+    }
+
+    // sawing money end
+
+    // about getting started
+    .about_getting_started {
+        padding: 140px 0;
+        background: var(--red);
+        margin-top: 140px;
+
+        .title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 60px;
+        }
+
+        .about_getting_started_card {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+
+            .card_item {
+                .card_img {
+                    margin-bottom: 40px;
+                }
+
+                .card_body {
+                    .step {
+                        margin-bottom: 20px;
+
+                        li {
+                            font-family: var(--font-family);
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 140%;
+                            color: var(--white);
+                        }
+                    }
+
+                    .card_description {
+                        max-width: 390px;
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 160%;
+                        color: var(--white);
+                        margin-bottom: 40px;
+                    }
+
+                    .card_link {
+                        a {
+                            gap: 5px;
+                            text-decoration: none;
+
+                            span {
+                                font-family: var(--font-family);
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 100%;
+                                color: var(--white);
+                                border-bottom: 1px solid #fff;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    // about getting started
+
+    // faq start
+    .faq {
+        padding: 140px 0 0;
+
+        .title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: var(--black);
+            margin-bottom: 80px;
+        }
+
+        .faq_list {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 113px;
+            row-gap: 60px;
+            padding-left: 26px;
+
+            li {
+                list-style-image: url('./img/circle.svg');
+                padding-left: 18px;
+                gap: 20px;
+
+                .head {
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 140%;
+                    color: var(--black);
+                    margin-bottom: 20px;
+                }
+
+                .list_body {
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: var(--black);
+                    margin: 0;
+                }
+
+                a {
+                    background: var(--red);
+                    border: 1px solid var(--red);
+                    padding: 25px 68px;
+                    border-radius: 10px;
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: var(--white);
+                    text-decoration: none;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #D21945;
+                    }
+                }
+
+                .login {
+                    background-color: transparent;
+                    color: var(--black);
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    // faqt end
+
+    // schedule call start 
+    .schedule_call {
+        padding-top: 140px;
+
+        .schedule_call_in {
+            background: var(--blue);
+            border-radius: 30px;
+            padding: 80px 30px;
+
+            .zoom {
+                max-width: 705px;
+                margin: 0 auto;
+                margin-bottom: 45px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .title {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 50px;
+                text-transform: uppercase;
+                color: var(--black);
+                margin-bottom: 30px;
+            }
+
+            .description {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                color: var(--black);
+                margin-bottom: 45px;
+            }
+
+            .schedule_call_link {
+                display: inline-block;
+                background: var(--red);
+                border-radius: 10px;
+                padding: 31px 50px;
+                border: 0;
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                color: var(--white);
+                text-decoration: none;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #D21945;
+                }
+            }
+        }
+    }
+
+    // schedule call end
+
+    // contact start
+    .contact {
+        background: var(--red);
+        margin-top: 140px;
+
+        .contact_in {
+            padding: 140px 0 520px;
+
+            .contact_bg {
+                left: 0;
+                bottom: 0;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    margin-bottom: -45px;
+                }
+            }
+
+            .contact_body {
+                z-index: 1;
+
+                .title {
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 50px;
+                    text-transform: uppercase;
+                    color: var(--white);
+                    margin-bottom: 30px;
+                }
+
+                .description {
+                    max-width: 482px;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: var(--white);
+                    margin-bottom: 30px;
+                }
+
+                .contact_btn {
+                    display: inline-block;
+                    border: 1.26px solid var(--white);
+                    border-radius: 10px;
+                    padding: 25px 60px;
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: var(--white);
+                    text-decoration: none;
+                    background-color: transparent;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: var(--blue);
+                        color: var(--black);
+                        // border-color: #D21945;
+                    }
+                }
+            }
+        }
+    }
+
+    // contact end
+
+    // modals
+    .modal_wrapper {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+
+        .modal_in {
+            max-width: 1120px;
+            max-height: 600px;
+            width: 100%;
+            height: 100%;
+            z-index: 102;
+            transform: translateY(-200px);
+            transition: 0.3s;
+
+            .close_btn {
+                bottom: calc(100% + 10px);
+                left: calc(100% + 10px);
+                cursor: pointer;
+            }
+
+            .video_wrapper {
+                border-radius: 10px;
+                background-color: #000;
+                overflow: hidden;
+
+                .play_btn {
+                    background-color: transparent;
+                    border: none;
+                }
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .qr_code {
+        .modal_in {
+            max-width: 420px;
+            max-height: 420px;
+
+            .close_btn {
+                left: calc(100%);
+                bottom: calc(100%);
+            }
+
+            .qr_code_img {
+                border-radius: 10px;
+                max-width: 420px;
+                max-height: 420px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .modal_btn {
+        cursor: pointer;
+    }
+
+    .modal_wrapper.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        visibility: visible;
+
+        .modal_in {
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .main_container {
+        max-width: 1240px;
+        padding: 0 40px;
+    }
+
+    .index_page {
+        overflow: hidden;
+
+        .home {
+            .home_in {
+                .home_body {
+                    padding: 60px;
+
+                    .title {
+                        font-size: 36px;
+                    }
+                }
+            }
+
+            .home_bottom {
+                .description {
+                    font-size: 34px;
+                }
+            }
+        }
+
+        .benefits {
+            .benefits_card {
+                .card_item {
+                    display: grid !important;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 50px;
+
+                    .card_img {
+                        min-height: 490px;
+                    }
+
+                    &:first-child {
+                        .card_img {
+                            img {
+                                max-height: 300px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .card_img {
+                            img {
+                                max-height: 490px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .card_img {
+                            img {
+                                max-height: 400px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        .card_img {
+                            img {
+                                max-height: 400px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+
+            .contact_in {
+
+                .contact_bg {
+                    width: calc(100% + 200px) !important;
+                    margin-left: -100px;
+                }
+            }
+        }
+
+        .modal_wrapper {
+            padding: 64px;
+
+            .modal_in {
+                max-height: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .index_page {
+
+        .home {
+            .home_in {
+                .home_body {
+                    padding: 30px;
+
+                    .title {
+                        font-size: 34px;
+                    }
+
+                    .home_auth {
+                        a {
+                            padding: 22px 50px;
+                        }
+                    }
+                }
+
+                .home_video {
+                    .how_works {
+                        padding: 25px;
+                        right: 30px;
+                        bottom: 30px;
+
+                        .modal_btn {
+                            svg {
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .home_bottom {
+                padding: 50px 0;
+
+                .main_container {
+                    gap: 20px;
+                }
+
+                .description {
+                    font-size: 30px;
+                    max-width: 651px;
+                }
+            }
+        }
+
+        .benefits {
+            .benefits_card {
+                .card_item {
+                    display: grid !important;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 50px;
+
+                    .card_img {
+                        min-height: 490px;
+                    }
+
+                    &:first-child {
+                        .card_img {
+                            img {
+                                max-height: 300px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .card_img {
+                            img {
+                                max-height: 490px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .card_img {
+                            img {
+                                max-height: 400px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        .card_img {
+                            img {
+                                max-height: 400px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sawing_money {
+            .sawing_money_card {
+                .card_item {
+                    padding: 50px 30px;
+                }
+            }
+        }
+
+        .about_getting_started {
+            .about_getting_started_card {
+                gap: 20px;
+            }
+        }
+
+        .faq {
+            .faq_list {
+                li {
+                    a {
+                        padding: 18px 45px;
+                    }
+                }
+            }
+        }
+
+        .contact {
+
+            .contact_in {
+
+                .contact_bg {
+                    width: calc(100% + 200px) !important;
+                    margin-left: -100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 993px) {
+    .index_page {
+        .home {
+            .home_in {
+                .home_body {
+                    border-radius: 10px;
+                    padding: 40px 10px;
+
+                    .title {
+                        font-size: 28px;
+                        margin-bottom: 100px;
+                    }
+
+                    .home_auth {
+                        display: grid !important;
+                        grid-template-columns: repeat(2, 1fr);
+
+                        a {
+                            font-size: 16px;
+                            text-align: center;
+                            padding: 19px 30px;
+                        }
+                    }
+                }
+
+                .home_video {
+                    border-radius: 0 10px 10px 0;
+                    margin-left: -10px;
+
+                    .how_works {
+                        .modal_btn {
+                            svg {
+                                max-height: 50px;
+                            }
+                        }
+
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .home_bottom {
+                .description {
+                    font-size: 23px;
+                    max-width: 530px;
+                }
+
+                .to_try_btn {
+                    padding: 20px 40px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .benefits {
+            padding-top: 100px;
+
+            .title {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+
+            .benefits_card {
+                .card_item {
+                    gap: 30px;
+
+                    .card_body {
+
+                        .card_body_title {
+                            font-size: 24px;
+                        }
+
+                        .card_body_description {
+                            font-size: 16px;
+                            line-height: 140%;
+                        }
+
+                        .sign_up {
+                            font-size: 18px;
+                            padding: 15px 30px;
+                            margin-top: 30px;
+                        }
+                    }
+
+                    .card_img {
+                        min-height: 360px;
+                    }
+
+                    &:first-child {
+                        .card_img {
+                            img {
+                                max-height: 200px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .card_img {
+                            img {
+                                max-height: 360px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .card_img {
+                            img {
+                                max-height: 300px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        .card_img {
+                            img {
+                                max-height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sawing_money {
+            padding-top: 100px;
+
+            .title {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+
+            .sawing_money_card {
+                .card_item {
+
+                    .card_body {
+                        .card_body_title {
+                            font-size: 24px;
+                            line-height: 120%;
+                            max-width: 290px;
+                        }
+
+                        .card_body_description {
+                            font-size: 16px;
+                            line-height: 140%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .about_getting_started {
+            padding-top: 100px;
+            margin-top: 100px;
+
+            .main_container {
+                padding: 0;
+            }
+
+            .about_getting_started_card_wrapper {
+                overflow: auto;
+                padding: 0 40px;
+
+                &::-webkit-scrollbar {
+                    height: 0;
+                }
+            }
+
+            .title {
+                font-size: 36px;
+                margin-bottom: 30px;
+                padding-left: 40px;
+            }
+
+            .about_getting_started_card {
+                min-width: 1200px;
+                width: 100%;
+                display: flex !important;
+                gap: 50px;
+
+                .card_item {
+                    .card_img {
+                        margin-bottom: 30px;
+
+                        img {
+                            max-height: 65px;
+                        }
+                    }
+
+                    .card_body {
+                        .step {
+                            padding-left: 20px;
+
+                            li {
+                                font-size: 24px;
+                                line-height: 140%;
+                            }
+                        }
+
+                        .card_description {
+                            font-size: 16px;
+                        }
+
+                        .card_link {
+                            a {
+                                span {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .faq {
+            padding-top: 100px;
+
+            .title {
+                font-size: 36px;
+                margin-bottom: 30px;
+
+            }
+
+            .faq_list {
+                gap: 60px;
+
+                li {
+                    padding-left: 15px;
+
+                    &::marker {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .head {
+                        font-size: 20px;
+                        line-height: 100%;
+                    }
+
+                    .list_body {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        padding: 15px 30px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .schedule_call {
+            padding-top: 100px;
+
+            .schedule_call_in {
+                .title {
+                    font-size: 36px;
+                }
+
+                .description {
+                    font-size: 16px;
+                }
+
+                .schedule_call_link {
+                    padding: 20px 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .contact {
+            margin-top: 100px;
+
+            .contact_in {
+                padding: 90px 0 350px;
+
+                .contact_bg {
+                    width: calc(100% + 100px) !important;
+                    min-width: 900px;
+                    margin-left: -50px;
+                }
+
+                .contact_body {
+                    .title {
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                    }
+
+                    .description {
+                        font-size: 16px;
+                        line-height: 130%;
+                        margin-bottom: 20px;
+                    }
+
+                    .contact_btn {
+                        padding: 15px 30px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .modal_wrapper {
+
+            .modal_in {
+                max-height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .index_page {
+        .home {
+            .home_in {
+                grid-template-columns: repeat(1, 1fr);
+
+                .home_body {
+                    order: 2;
+
+                    .home_auth {
+                        max-width: 340px;
+                        gap: 10px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .home_video {
+                    height: 380px;
+                    order: 1;
+                    margin-left: 0;
+                    border-radius: 10px 10px 0 0;
+                    margin-bottom: -10px;
+                }
+            }
+
+            .home_bottom {
+
+                .description {
+                    font-size: 24px;
+                    max-width: 100%;
+                    text-align: center;
+                }
+
+                .to_try_btn {
+                    max-width: 340px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .benefits {
+            .benefits_card {
+                .card_item {
+                    grid-template-columns: repeat(1, 1fr);
+                    margin-bottom: 30;
+
+                    &:first-child {
+                        .card_img {
+                            img {
+                                max-height: 250px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .card_body {
+                        order: 1;
+                    }
+
+                    .card_img {
+                        order: 2 !important;
+                    }
+                }
+            }
+        }
+
+        .sawing_money {
+            .sawing_money_card {
+                grid-template-columns: repeat(1, 1fr);
+
+                .card_item {
+                    &:first-child {
+                        .card_img {
+                            height: 400px !important;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .faq {
+            .faq_list {
+                grid-template-columns: repeat(1, 1fr);
+                overflow: hidden;
+                gap: 20px;
+
+                li {
+                    &:nth-child(1) {
+                        order: 1;
+                    }
+
+                    &:nth-child(2) {
+                        order: 2;
+                    }
+
+                    &:nth-child(3) {
+                        order: 3;
+                    }
+
+                    &:nth-child(4) {
+                        order: 4;
+                    }
+
+                    &:nth-child(5) {
+                        order: 5;
+                    }
+
+                    &:nth-child(6) {
+                        order: 6;
+                    }
+
+                    &:nth-child(7) {
+                        order: 7;
+                    }
+
+                    &:nth-child(8) {
+                        order: 8;
+                    }
+
+                    &:nth-child(9) {
+                        order: 9;
+                    }
+
+                    &:nth-child(10) {
+                        order: 10;
+                    }
+                }
+            }
+
+            .show_more_btn {
+                border: 1.26px solid var(--red);
+                border-radius: 10px;
+                padding: 25px 50px;
+                background-color: transparent;
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                color: var(--red);
+            }
+        }
+
+        .contact {
+            .contact_in {
+                padding: 90px 0 250px;
+
+                .contact_bg {
+                    min-width: 750px;
+                    margin-left: -100px;
+                }
+            }
+        }
+
+        .qr_code {
+            .modal_in {
+                max-width: 250px;
+                max-height: 250px;
+
+                .close_btn {
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 577px) {
+    .main_container {
+        padding: 0 10px;
+    }
+
+    .index_page {
+        .home {
+            padding: 0;
+
+            .main_container {
+                padding: 0;
+            }
+
+            .home_in {
+                margin-bottom: 0;
+
+                .home_video {
+                    border-radius: 0;
+                    height: 289px;
+                }
+
+                .home_body {
+                    .title {
+                        font-size: 28px;
+                        line-height: 140%;
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+
+            .video_modal {
+                position: static !important;
+                background-color: transparent;
+                height: 279px;
+                visibility: visible;
+                opacity: 1;
+                padding: 20px 10px;
+
+                .modal_in {
+                    transform: translate(0);
+
+                    .video_wrapper {
+                        background: #797979;
+                        margin-bottom: 20px;
+                    }
+
+                    .mobil_text {
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 16px;
+                        text-align: center;
+                        color: var(--black);
+                    }
+                }
+            }
+
+            .home_bottom {
+                padding: 40px 10px;
+
+                .main_container {
+                    align-items: flex-start !important;
+                }
+
+                .description {
+                    line-height: 140%;
+                    text-align: start;
+                    margin-bottom: 0;
+                    max-width: 340px;
+                }
+
+                .to_try_btn {
+                    max-width: 340px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .benefits {
+            padding-top: 40px;
+
+            .title {
+                font-size: 28px;
+                line-height: 140%;
+                margin-bottom: 20px;
+            }
+
+            .benefits_card {
+                .card_item {
+                    gap: 20px;
+                    margin-bottom: 20px;
+
+                    .card_body {
+                        .card_body_description {
+                            font-weight: 400;
+                        }
+                    }
+
+                    .card_img {
+                        min-height: 223px;
+                        border-radius: 10px;
+                    }
+
+                    &:first-child {
+                        .card_img {
+
+                            img {
+                                max-height: 181px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .card_img {
+                            img {
+                                max-height: 223px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .card_img {
+                            img {
+                                max-height: 218px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+
+                        .card_img {
+                            img {
+                                max-height: 200px;
+                            }
+                        }
+
+                        .sign_up {
+                            max-width: 360px;
+                            width: 100%;
+                            margin: 0 auto;
+                            border: 1.26px solid var(--red);
+                            border-radius: 10px;
+                            padding: 25px;
+                            font-family: var(--font-family);
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: var(--red);
+                            text-align: center;
+                            text-decoration: none;
+                            order: 3;
+                            transition: 0.3s;
+
+                            &:hover {
+                                background-color: #D21945;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sawing_money {
+            padding-top: 40px;
+
+            .title {
+                font-size: 28px;
+                line-height: 140%;
+                margin-bottom: 20px;
+            }
+
+            .sawing_money_card {
+                gap: 10px;
+
+                .card_item {
+                    border-radius: 10px;
+                    padding: 40px 10px;
+
+                    &:first-child {
+                        .card_img {
+                            height: 266px !important;
+                        }
+
+                    }
+
+                    .card_img {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .about_getting_started {
+            margin-top: 40px;
+            border-radius: 10px 0 0 10px;
+            padding: 40px 0;
+
+            .main_container {
+                padding: 0;
+            }
+
+            .title {
+                font-size: 28px;
+                line-height: 140%;
+                padding-left: 20px;
+            }
+
+            .about_getting_started_card_wrapper {
+                padding: 0 0 0 20px;
+
+                .about_getting_started_card {
+                    min-width: auto;
+
+                    .card_item {
+                        min-width: 200px;
+
+                        &:nth-child(2) {
+                            min-width: 300px;
+                        }
+
+                        &:last-child {
+                            min-width: 290px;
+                        }
+
+                        .card_body {
+                            .step {
+                                li {
+                                    font-size: 24px;
+                                    line-height: 100%;
+                                }
+                            }
+
+                            .card_description {
+                                max-width: 200px;
+                                font-weight: 400;
+                                line-height: 140%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq {
+            padding-top: 40px;
+
+            .title {
+                font-size: 28px;
+                line-height: 140%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .faq_list {
+                padding-left: 26px;
+
+                li {
+                    padding-left: 14px;
+
+                    .list_body {
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+            }
+
+            .show_more_btn {
+                max-width: 360px;
+                width: 100%;
+                margin: 0 auto;
+                line-height: 20px;
+            }
+        }
+
+        .schedule_call {
+            padding-top: 40px;
+
+            .main_container {
+                padding: 0;
+            }
+
+            .schedule_call_in {
+                border-radius: 0;
+                padding: 40px 30px;
+
+                .zoom {
+                    margin-bottom: 20px;
+                }
+
+                .title {
+                    font-size: 28px;
+                    line-height: 140%;
+                    margin-bottom: 5px;
+                }
+
+                .description {
+                    max-width: 252px;
+                    margin: 0 auto;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    margin-bottom: 20px;
+                }
+
+                .schedule_call_link {
+                    padding: 19px 50px;
+                    font-size: 16px;
+                    line-height: 140%;
+                }
+            }
+        }
+
+        .contact {
+            padding-top: 40px;
+            margin-top: 40px;
+
+            .contact_in {
+                padding: 0 0 490px;
+
+                .contact_body {
+                    width: 100% !important;
+
+                    .title {
+                        font-size: 28px;
+                        line-height: 140%;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+                    .description {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+                    .contact_btn {
+                        padding: 19px 50px;
+                    }
+                }
+
+                .contact_bg {
+                    min-width: 720px;
+                    margin-left: -18px;
+                }
+            }
+        }
+    }
+}
